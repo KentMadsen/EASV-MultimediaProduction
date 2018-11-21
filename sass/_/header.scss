@@ -8,16 +8,11 @@ h1
 h2
 {
     @extend h1;
-    
+    margin: 0px;
 };
 
 h3
 {
     @extend h2;
-
-};
-
-.header-nagivation-field
-{
-    font-size: 32px;
-}
+    margin: 0px;
+}; 

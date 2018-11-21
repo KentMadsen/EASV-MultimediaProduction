@@ -1,0 +1,20 @@
+.button
+{
+    
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button_label
+{
+    text-align: center;
+
+
+    font-family: $font-title-stack;
+    font-weight: 400;
+}
+
+.button_label_logo
+{
+    @extend .button_label;
+}

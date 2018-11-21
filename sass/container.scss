@@ -3,7 +3,7 @@
     display: grid;
     
     grid-template-rows: auto;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
     grid-gap: 20px;
 
@@ -12,12 +12,28 @@
 
 .header-area
 {
+    margin-top: 15px;
+
     grid-area: auto;
 
-    padding-left: 20px;
-    padding-right: 20px;
-
     width: 100%;
+}
+
+.header-navigation-area
+{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-gap: 0px;
+
+}
+
+.header-navigation-field
+{
+    grid-area: auto;
+
 }
 
 
