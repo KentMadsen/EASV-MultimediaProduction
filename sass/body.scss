@@ -1,0 +1,80 @@
+// Generics
+%no-margin
+{
+    margin: 0px;
+}
+
+// text document
+.page-body
+{
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+// Title
+h1
+{
+    font-family: $font-header-stack;
+}
+
+h2
+{
+    font-family: $font-header-stack;
+}
+
+h3
+{
+    font-family: $font-header-stack;
+}
+
+p
+{
+    font-family: $font-body-stack;
+}
+
+
+%title_base
+{
+    @extend %no-margin;
+}
+
+.title
+{
+    @extend %title_base;
+
+}
+
+// Body
+%body_base
+{
+    @extend %no-margin;
+    font-size: 16px;
+}
+
+.summary
+{
+    @extend %body_base;
+
+    color: #bdc3c7;
+
+    font-size: 14px;
+}
+
+.registered
+{
+    @extend %body_base;
+
+    font-size: 11px;
+}
+
+.body
+{
+    @extend %body_base;
+
+}

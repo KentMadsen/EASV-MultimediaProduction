@@ -1,0 +1,107 @@
+@import 'generic.scss';
+
+$primary    : #d63031;
+$font-color : #ecf0f1;
+
+$default-padding-height : 5px;
+$default-padding-width  : 10px;
+
+$expand : 100%;
+
+$view_size_min : 800px;
+$view_size_max : 1024px;
+
+$gap : 10px;
+
+%header
+{
+    
+}
+
+%site-domain
+{
+    margin:0px;
+}
+
+%container
+{
+    @extend  %site-domain;
+
+    padding-left  : $default-padding-width;
+    padding-right : $default-padding-width;
+
+    padding-top     : $default-padding-height;
+    padding-bottom  : $default-padding-height;
+}
+
+%site-container
+{
+    @extend %container;
+
+    color           : $font-color;
+    background-color: $primary;
+
+
+}
+
+
+body
+{
+    @extend %site-domain;
+
+    display: grid;
+
+    width: $expand;
+
+    grid-template-columns : auto;
+    grid-template-rows    : auto auto auto;
+
+    grid-template-areas : "header_area"
+                          "main_area"
+                          "footer_area";
+
+    grid-gap: $gap;
+}
+
+nav
+{
+
+
+}
+
+header
+{
+    @extend %site-container;
+
+    grid-area: header_area;
+
+}
+
+main
+{
+    @extend %container;
+
+    grid-area: main_area;
+
+}
+
+.view
+{
+    min-width: $view_size_min;
+    max-width: $view_size_max;
+
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+footer
+{
+    @extend %site-container;
+    
+    grid-area: footer_area;
+    
+}
+
+
+
+
