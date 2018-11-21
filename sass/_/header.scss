@@ -1,0 +1,23 @@
+h1
+{
+    font-family: $font-title-stack;
+    
+};
+
+//
+h2
+{
+    @extend h1;
+    
+};
+
+h3
+{
+    @extend h2;
+
+};
+
+.header-nagivation-field
+{
+    font-size: 32px;
+}

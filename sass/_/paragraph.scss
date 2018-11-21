@@ -1,6 +1,6 @@
 p
 {
-    margin: 0px;
+    margin: $zero;
     color: $font-primary;
 }
 
@@ -17,5 +17,4 @@ header p
 footer p
 {
     @extend %meta-page;
-
 }
