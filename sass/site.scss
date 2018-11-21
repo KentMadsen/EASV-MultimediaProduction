@@ -1,26 +1,18 @@
-@import 'generic.scss';
 
-$primary    : #d63031;
-$font-color : #ecf0f1;
+$expand : 100%;
 
 $default-padding-height : 5px;
 $default-padding-width  : 10px;
 
-$expand : 100%;
 
 $view_size_min : 800px;
 $view_size_max : 1024px;
 
 $gap : 10px;
 
-%header
-{
-    
-}
-
 %site-domain
 {
-    margin:0px;
+    margin:$zero;
 }
 
 %container
@@ -38,12 +30,9 @@ $gap : 10px;
 {
     @extend %container;
 
-    color           : $font-color;
-    background-color: $primary;
-
-
+    color           : $font-primary;
+    background-color: $primary-scheme;
 }
-
 
 body
 {
@@ -87,9 +76,11 @@ main
 
 .view
 {
+    //
     min-width: $view_size_min;
     max-width: $view_size_max;
 
+    //
     margin-left  : auto;
     margin-right : auto;
 }
@@ -97,9 +88,9 @@ main
 footer
 {
     @extend %site-container;
-    
+
     grid-area: footer_area;
-    
+
 }
 
 

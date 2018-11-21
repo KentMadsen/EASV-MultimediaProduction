@@ -15,7 +15,7 @@ main, footer, header {
 }
 
 footer, header {
-  color: #ecf0f1;
+  color: black;
   background-color: #d63031;
 }
 
@@ -72,19 +72,12 @@ h3 {
   font-family: "Open Sans";
 }
 
-.body, .registered, .summary {
+p {
   font-family: "Roboto";
-  font-size: 16px;
 }
 
 .summary {
-  color: #bdc3c7;
-  font-size: 14px;
-  text-align: left;
-}
-
-.registered {
-  font-size: 11px;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

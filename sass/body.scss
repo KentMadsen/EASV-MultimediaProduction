@@ -1,7 +1,7 @@
 // Generics
 %no-margin
 {
-    margin: 0px;
+    margin: $zero;
 }
 
 // text document
@@ -9,7 +9,6 @@
 {
     margin-top: 10px;
     margin-bottom: 25px;
-
 
     padding-top: 5px;
     padding-left: 20px;
@@ -54,23 +53,22 @@ p
 %body_base
 {
     @extend %no-margin;
-    font-size: 16px;
+    
 }
 
 .summary
 {
     @extend %body_base;
 
-    color: #bdc3c7;
+    color: $font-tertiary;
 
-    font-size: 14px;
 }
 
 .registered
 {
     @extend %body_base;
 
-    font-size: 11px;
+    
 }
 
 .body
