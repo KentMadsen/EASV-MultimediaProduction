@@ -4,40 +4,15 @@
     margin: $zero;
 }
 
-// text document
-.page-body
-{
-    margin-top: 10px;
-    margin-bottom: 25px;
+// Title
 
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
+
+.page-header
+{
+
 }
 
 // Title
-h1
-{
-    font-family: $font-header-stack;
-}
-
-h2
-{
-    font-family: $font-header-stack;
-}
-
-h3
-{
-    font-family: $font-header-stack;
-}
-
-p
-{
-    font-family: $font-body-stack;
-}
-
-
 %title_base
 {
     @extend %no-margin;
@@ -47,13 +22,6 @@ p
 {
     @extend %title_base;
 
-}
-
-// Body
-%body_base
-{
-    @extend %no-margin;
-    
 }
 
 .summary
@@ -68,6 +36,24 @@ p
 {
     @extend %body_base;
 
+    
+}
+
+.page-body
+{
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+// Body
+%body_base
+{
+    @extend %no-margin;
     
 }
 
