@@ -1,0 +1,35 @@
+%links-standard
+{
+    color: $font-secondary;
+    text-decoration: none;
+}
+
+a
+{
+    @extend %links-standard;
+    
+}
+
+a:link
+{
+    @extend %links-standard;
+    
+}
+
+a:hover
+{
+    @extend %links-standard;
+    
+}
+
+a:visited
+{
+    @extend %links-standard;
+    
+}
+
+a:active
+{
+    @extend %links-standard;
+
+}
