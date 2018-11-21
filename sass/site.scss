@@ -9,9 +9,10 @@ $view_size_max : 1024px;
 
 $gap : 10px;
 
+//
 %site-domain
 {
-    margin:$zero;
+    margin : $zero;
 }
 
 %container
@@ -54,6 +55,7 @@ body
     grid-gap: $gap;
 }
 
+//
 header
 {
     @extend %site-container;
@@ -62,12 +64,18 @@ header
 
 }
 
+.header-home
+{
+    
+}
+
 nav
 {
 
 
 }
 
+//
 main
 {
     @extend %container;
@@ -87,18 +95,17 @@ main
     margin-right : auto;
 }
 
-.bottom-page
-{
-    grid-area : footer-bottom;
-    margin    : 0px;
-}
-
-
+//
 footer
 {
     @extend %site-container;
 
     grid-area: footer_area;
 
-    margin-bottom: 0px;
+}
+
+.bottom-page
+{
+    grid-area : footer-bottom;
+    margin    : $zero;
 }

@@ -1,0 +1,21 @@
+p
+{
+    margin: 0px;
+    color: $font-primary;
+}
+
+%meta-page
+{
+    color: $font-secondary;
+}
+
+header p
+{
+    @extend %meta-page;
+}
+
+footer p
+{
+    @extend %meta-page;
+
+}
