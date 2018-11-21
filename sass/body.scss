@@ -1,44 +1,16 @@
 // Generics
 %no-margin
 {
-    margin: 0px;
-}
-
-// text document
-.page-body
-{
-    margin-top: 10px;
-    margin-bottom: 25px;
-
-
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
+    margin: $zero;
 }
 
 // Title
-h1
+.page-header
 {
-    font-family: $font-header-stack;
+
 }
 
-h2
-{
-    font-family: $font-header-stack;
-}
-
-h3
-{
-    font-family: $font-header-stack;
-}
-
-p
-{
-    font-family: $font-body-stack;
-}
-
-
+// Title
 %title_base
 {
     @extend %no-margin;
@@ -50,27 +22,37 @@ p
 
 }
 
-// Body
-%body_base
-{
-    @extend %no-margin;
-    font-size: 16px;
-}
-
 .summary
 {
     @extend %body_base;
 
-    color: #bdc3c7;
+    color: $font-tertiary;
 
-    font-size: 14px;
 }
 
 .registered
 {
     @extend %body_base;
 
-    font-size: 11px;
+    
+}
+
+.page-body
+{
+    margin-top      : 10px;
+    margin-bottom   : 25px;
+
+    padding-top     : 5px;
+    padding-left    : 20px;
+    padding-right   : 20px;
+    padding-bottom  : 15px;
+}
+
+// Body
+%body_base
+{
+    @extend %no-margin;
+    
 }
 
 .body

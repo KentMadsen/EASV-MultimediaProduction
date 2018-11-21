@@ -1,0 +1,101 @@
+%links-standard
+{
+    color: $secondary-scheme;
+    text-decoration: none;
+}
+
+%links-standard-meta
+{
+    color: $background-color;
+    text-decoration: none;
+}
+
+/* */
+a
+{
+    @extend %links-standard;
+    
+}
+
+a:link
+{
+    @extend %links-standard;
+    
+}
+
+a:hover
+{
+    @extend %links-standard;
+    
+}
+
+a:visited
+{
+    @extend %links-standard;
+    
+}
+
+a:active
+{
+    @extend %links-standard;
+}
+
+/* Header */
+header a
+{
+    @extend %links-standard-meta;
+    
+}
+
+header a:link
+{
+    @extend %links-standard-meta;
+    
+}
+
+header a:hover
+{
+    @extend %links-standard-meta;
+    
+}
+
+header a:visited
+{
+    @extend %links-standard-meta;
+    
+}
+
+header a:active
+{
+    @extend %links-standard-meta;
+}
+
+/* Footer */
+footer a
+{
+    @extend %links-standard-meta;
+    
+}
+
+footer a:link
+{
+    @extend %links-standard-meta;
+    
+}
+
+footer a:hover
+{
+    @extend %links-standard-meta;
+    
+}
+
+footer a:visited
+{
+    @extend %links-standard-meta;
+    
+}
+
+footer a:active
+{
+    @extend %links-standard-meta;
+}

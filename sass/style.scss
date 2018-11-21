@@ -1,11 +1,9 @@
 //
-@import './_/_variable.scss';
-@import './_/base.scss';
+@import './_/_include.scss';
 
+//
+@import 'container.scss';
 
-@import 'uniform.scss';
-
-@import 'navigation.scss';
-
+//
 @import 'site.scss';
 @import 'body.scss';
