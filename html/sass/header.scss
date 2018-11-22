@@ -4,6 +4,7 @@ header
 
     grid-area: header-area;
 
+
     //
     display: grid;
 
@@ -30,6 +31,7 @@ header
     flex-wrap: wrap;
 
     margin: 0px;
+
     padding-left: 25px;
     padding-right:25px;
 
@@ -55,15 +57,54 @@ header
 
     padding: 8px;
 
-
     border: 1px solid rgba(0, 0, 0, 0.125);
-    transition: $link-transition;
+    border-left:2px solid $charlie-color;
+    transition: $link-transition ease-in-out;
+
 }
 
 .header-container ol a li:hover
 {
+    background-size: 20px 20px;
+
+    transition: $link-transition ease-in;
     color:$background-color;
+    background-color: $charlie-color;
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+    border-left:2px solid $charlie-color;
+
+    border-radius: 4px;
+}
+
+.header-container ol a li:active
+{
+    transition: $link-transition;
+    border-radius: 1px;
+
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-left:2px solid $bravo-color;
+
+    background-color: $bravo-color;
+}
+
+#header-selected
+{
+    background-color:rgba(0,0,0,0);
+    color:$alpha-color;
+
+    border-left: 2px solid $alpha-color;
+    border-radius: 0px;
+}
+
+#header-selected:hover
+{
+    border-radius: 0px;
     background-color: $alpha-color;
+    color: $background-color;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
 #navigation-header
