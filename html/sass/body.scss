@@ -11,12 +11,13 @@ body
 
     display: grid;
 
-    grid-template-rows: auto auto auto;
-
-    grid-gap: $document-gap;
+    grid-template-rows: $header-height auto auto;
 
     grid-template-areas: "header-area"
                          "page_and_page_navigation"
                          "footer-area";
+
+    grid-gap: $page-area-gaps;
+
 }
 

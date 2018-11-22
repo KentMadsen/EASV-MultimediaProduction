@@ -1,7 +1,6 @@
 #document_page
 {
     grid-area: page_document_area;
-    min-height: 400px;
 
     display: grid;
     margin-top: $document-top-padding-space;
@@ -22,21 +21,21 @@
 }
 
 //
-.document_page_container h1
+.document_page_container article h1
 {
     font-family: $font-document-title;
 
 
 }
 
-.document_page_container h2
+.document_page_container article h2
 {
     font-family: $font-document-title;
 
 
 }
 
-.document_page_container h3
+.document_page_container article h3
 {
     font-family: $font-document-title;
 

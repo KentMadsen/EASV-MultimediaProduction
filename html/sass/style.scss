@@ -35,7 +35,9 @@ main
     grid-template-columns : auto $navigation-width;
 
     grid-template-areas : "body-area page_navigation_area";
-    
+
+    border-bottom: 1px solid $border-color;
+
     grid-gap : 10px;
 }
 
