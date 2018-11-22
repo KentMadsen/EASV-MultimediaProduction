@@ -1,9 +1,14 @@
+
+
 header
 {
     @extend %no-margin;
 
-    grid-area: header-area;
+    @extend %foreground;
 
+    background-color: $background-color;
+
+    grid-area: header-area;
 
     //
     display: grid;
@@ -47,11 +52,17 @@ header
 
 .header-container ol a li
 {
+
+    text-transform: uppercase;
+
     list-style-type: none;
 
     display: block;
 
     color: $charlie-color;
+
+    font-family: $font-title-stack;
+    font-weight: bold;
 
     border-radius: 8px;
 

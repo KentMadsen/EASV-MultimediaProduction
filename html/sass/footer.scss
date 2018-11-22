@@ -3,13 +3,14 @@ footer
     @extend %no-margin;
     grid-area:footer-area;
 
+    @extend %foreground;
 }
 
 #footer-misc-labels
 {
     border-top: 1px solid $border-color;
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
 
     padding-bottom: 5px;
     padding-top: 5px;
