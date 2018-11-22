@@ -5,11 +5,12 @@
     @extend %foreground;
 
     display: grid;
-    margin-top: $document-top-padding-space;
+    margin-top: 5px;
+    padding-top: $document-top-padding-space;
 
     grid-template-columns : 1fr 1fr;
 
-    background-color: #f2f2f2;
+    background-color: $background-page;
     grid-gap: $document-gap;
     z-index: 0;
 }
@@ -21,6 +22,11 @@
 
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.document-page-body-header
+{
+    padding-top: 200px;
 }
 
 //

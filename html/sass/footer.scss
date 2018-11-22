@@ -1,16 +1,17 @@
 footer
 {
+    @extend %foreground;
+
     @extend %no-margin;
     grid-area:footer-area;
 
-    @extend %foreground;
 }
 
 #footer-misc-labels
 {
     border-top: 1px solid $border-color;
 
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color:#292929;
 
     padding-bottom: 5px;
     padding-top: 5px;
@@ -29,4 +30,10 @@ footer
     width: 100%;
 
     height: 25px;
+}
+
+.footer-area-content
+{
+    height: 350px;
+    background-color: $background-page;
 }
