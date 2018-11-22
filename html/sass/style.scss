@@ -1,8 +1,53 @@
 //
 @import './_/_base.scss';
 
-body
+//
+@import './header.scss';
+@import './body.scss';
+@import './footer.scss';
+@import './document.scss';
+@import './cover.scss';
+
+
+main
 {
+    @extend %no-margin;
+    grid-area: main-grid-area;
+ 
+    border-top: 1px solid black;
+
+    height: $header-height;
+}
+
+.document-and-navigation
+{
+    display: grid;
+
+    grid-template-columns : auto $navigation-width;
+
+    grid-template-areas : "body-area page_navigation_area";
+    
+    grid-gap : 15px;
+}
+
+.view-navigation
+{
+    grid-area: page_navigation_area;
 
 }
 
+.view-container
+{
+    grid-area: body-area;
+    display:grid;
+
+
+    grid-template-columns : auto;
+    grid-template-rows    : $header-height auto auto;
+
+    grid-template-areas : "header-grid-area"
+                          "main-grid-area"
+                          "footer-grid-area";
+
+    grid-gap : 15px;
+}

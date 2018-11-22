@@ -1,0 +1,19 @@
+
+footer
+{
+    @extend %no-margin;
+
+    
+    border-top: 1px solid $border-color;
+}
+
+#footer-misc-labels
+{
+    border-top: 1px solid $border-color;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#footer-misc-labels ol li
+{
+    display: inline;
+}
