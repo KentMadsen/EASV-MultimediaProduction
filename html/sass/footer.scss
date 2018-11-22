@@ -1,20 +1,21 @@
 footer
 {
     @extend %foreground;
-
     @extend %no-margin;
+
+    border-top: 1px solid $border-color;
+
     grid-area:footer-area;
 
 }
 
 #footer-misc-labels
 {
-    border-top: 1px solid $border-color;
-
     background-color:#292929;
 
     padding-bottom: 5px;
     padding-top: 5px;
+
 }
 
 #footer-misc-labels ol li

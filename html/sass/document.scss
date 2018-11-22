@@ -12,6 +12,7 @@
 
     background-color: $background-page;
     grid-gap: $document-gap;
+
     z-index: 0;
 }
 
@@ -20,35 +21,56 @@
 {
     grid-area: auto;
 
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .document-page-body-header
 {
-    padding-top: 200px;
+    padding-top: 50px;
+    width: 100%;
 }
 
 //
 .document_page_container article h1
 {
     font-family: $font-document-title;
+    font-size: 50px;
 
     text-transform: uppercase;
+    font-weight: bold;
 
+    word-spacing: 0.30em;
+
+    margin: 0px;
 }
 
 .document_page_container article h2
 {
     font-family: $font-document-title;
 
-    text-transform: uppercase;
+    word-spacing: 0.30em;
 
+    text-transform: uppercase;
+    margin: 0px;
+    margin-top:15px;
+    margin-bottom: 10px;
+
+}
+
+.document_page_container article h2:first-of-type
+{
+    margin-top: 25px;
 }
 
 .document_page_container article h3
 {
     font-family: $font-document-title;
+
+    word-spacing: 0.30em;
+    margin:0px;
 
     text-transform: uppercase;
 
@@ -56,8 +78,7 @@
 
 .document_page_container p
 {
-    font-family: $font-document-title;
-
-
-
+    margin:0px;
+    font-size: 12px;
+    word-break: break-word;
 }
