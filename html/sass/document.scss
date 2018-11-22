@@ -1,20 +1,52 @@
-
-%document_page
-{
-
-}
-
 #document_page
 {
     grid-area: page_document_area;
+    min-height: 400px;
+
+    display: grid;
+    margin-top: $document-top-padding-space;
+
+    grid-template-columns : 1fr 1fr;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    grid-gap: $document-gap;
 }
 
-#document_page_alpha
+//
+.document_page_container
 {
+    grid-area: auto;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+//
+.document_page_container h1
+{
+    font-family: $font-document-title;
+
 
 }
 
-#document_page_bravo
+.document_page_container h2
 {
-    
+    font-family: $font-document-title;
+
+
+}
+
+.document_page_container h3
+{
+    font-family: $font-document-title;
+
+
+}
+
+.document_page_container p
+{
+    font-family: $font-document-title;
+
+
+
 }

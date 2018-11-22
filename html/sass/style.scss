@@ -4,36 +4,39 @@
 //
 @import './header.scss';
 @import './body.scss';
+@import "./navigation.scss";
 @import './footer.scss';
 @import './document.scss';
 @import './cover.scss';
 
+@import "./container";
+
+@import "./misc.scss";
+@import "./navigation.scss";
+
+@import "./effect.scss";
 
 main
 {
     @extend %no-margin;
     grid-area: main-grid-area;
- 
-    border-top: 1px solid black;
 
-    height: $header-height;
+    padding-top: $length-to-header;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .document-and-navigation
 {
     display: grid;
+    grid-area: page_and_page_navigation;
 
     grid-template-columns : auto $navigation-width;
 
     grid-template-areas : "body-area page_navigation_area";
     
-    grid-gap : 15px;
-}
-
-.view-navigation
-{
-    grid-area: page_navigation_area;
-
+    grid-gap : 10px;
 }
 
 .view-container
@@ -41,13 +44,10 @@ main
     grid-area: body-area;
     display:grid;
 
-
     grid-template-columns : auto;
-    grid-template-rows    : $header-height auto auto;
+    grid-template-rows    : auto;
 
-    grid-template-areas : "header-grid-area"
-                          "main-grid-area"
-                          "footer-grid-area";
+    grid-template-areas : "main-grid-area";
 
-    grid-gap : 15px;
+    grid-gap : 10px;
 }

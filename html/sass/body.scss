@@ -1,6 +1,22 @@
+*
+{
+    font-family: $font-body-stack;
+}
 
 body
 {
     @extend %no-margin;
+
     background-color: $background-color;
+
+    display: grid;
+
+    grid-template-rows: auto auto auto;
+
+    grid-gap: $document-gap;
+
+    grid-template-areas: "header-area"
+                         "page_and_page_navigation"
+                         "footer-area";
 }
+
