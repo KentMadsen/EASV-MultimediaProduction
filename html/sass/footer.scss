@@ -9,8 +9,27 @@ footer
 
 }
 
+.footer-area-content
+{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
 .footer-container
 {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-container-grid
+{
+    grid-area: auto;
+
 
 }
 
@@ -40,6 +59,6 @@ footer
 
 .footer-area-content
 {
-    height: 350px;
+    height: 250px;
     background-color: $background-page;
 }
