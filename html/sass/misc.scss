@@ -1,3 +1,18 @@
+.emphasis
+{
+  font-weight: bold;
+}
+
+.format
+{
+  display: block;
+}
+
+.move
+{
+  margin-left: 65px;
+}
+
 .misc p
 {
   @extend %no-margin;

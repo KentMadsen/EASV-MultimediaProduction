@@ -82,3 +82,59 @@
     font-size: 12px;
     word-break: break-word;
 }
+
+.document-page-meta
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: space-between;
+}
+
+.splitter
+{
+    width: 100%;
+    height: 200px;
+}
+
+.actions
+{
+    font-family: $font-title-stack;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+.meta
+{
+    padding-top: 50px;
+}
+
+.document-page-meta a
+{
+    color: $charlie-color;
+    transition: $link-transition;
+}
+
+.document-page-meta a:hover
+{
+    color: $bravo-color;
+    transition: $link-transition;
+}
+
+
+.document-page-meta a li
+{
+    max-width: 100%;
+    display: block;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.document-page-meta a li i
+{
+    font-size: 35px;
+}
