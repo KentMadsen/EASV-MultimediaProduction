@@ -1,5 +1,8 @@
 *.css
 *.map
 
+*.css
+*.xml
+
 doner.png
 reddet.png

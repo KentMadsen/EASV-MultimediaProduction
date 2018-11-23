@@ -27,6 +27,21 @@ h2
     list-style-type: none;
 }
 
+.person-image
+{
+    width: 298px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.person-image img
+{
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
 
 .reference:visited
 {
