@@ -1,0 +1,127 @@
+header
+{
+    @extend %no-margin;
+
+    @extend %foreground;
+
+    background-color: $background-page;
+
+    grid-area: header-area;
+
+    //
+    display: grid;
+
+    grid-template-columns: 1fr 0.5fr 1fr;
+
+    grid-gap : $header-area-gaps;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.header-container
+{
+    grid-area: auto;
+
+    width: 100%;
+}
+
+.header-container ol
+{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    transform: translateY(50%);
+
+    flex-wrap: wrap;
+
+    margin: 0px;
+
+    padding-left: 25px;
+    padding-right:25px;
+
+    justify-content: space-between;
+
+}
+
+.header-container ol a
+{
+    text-decoration: none;
+
+}
+
+.header-container ol a li
+{
+
+    word-spacing: 0.30em;
+
+    text-transform: uppercase;
+
+    list-style-type: none;
+
+    display: block;
+
+    color: $charlie-color;
+
+    font-family: $font-title-stack;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    padding: 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-left:2px solid $charlie-color;
+    transition: $link-transition ease-in-out;
+
+}
+
+.header-container ol a li:hover
+{
+    background-size: 20px 20px;
+
+    transition: $link-transition ease-in;
+    color:$background-color;
+    background-color: $charlie-color;
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+    border-left:2px solid $charlie-color;
+
+    border-radius: 4px;
+}
+
+.header-container ol a li:active
+{
+    transition: $link-transition;
+    border-radius: 1px;
+
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-left:2px solid $bravo-color;
+
+    background-color: $bravo-color;
+}
+
+#header-selected
+{
+    background-color:rgba(0,0,0,0);
+    color:$alpha-color;
+
+    border-left: 2px solid $alpha-color;
+    border-radius: 0px;
+}
+
+#header-selected:hover
+{
+    border-radius: 0px;
+    background-color: $alpha-color;
+    color: $background-color;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+#navigation-header
+{
+
+}

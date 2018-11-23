@@ -1,0 +1,74 @@
+.emphasis
+{
+  font-weight: bold;
+}
+
+.format
+{
+  display: block;
+}
+
+.move
+{
+  margin-left: 65px;
+}
+
+.misc p
+{
+  @extend %no-margin;
+
+  margin-top: 5px;
+
+  text-align: center;
+
+  font-family: $font-subtitle-stack;
+  font-size: $misc-text-size;
+
+  color: white;
+}
+
+.misc a
+{
+  font-family: $font-subtitle-stack;
+  color:$charlie-color;
+  font-size: $misc-text-size;
+  text-decoration: none;
+}
+
+.misc a:hover
+{
+  transition: $link-transition;
+  color: $alpha-color;
+
+  font-weight: bold;
+
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.misc a:visited
+{
+  @extend a;
+}
+
+.misc a:link
+{
+  @extend a;
+  transition: $link-transition;
+}
+
+.misc ol
+{
+  @extend %no-margin;
+
+  padding: 0px;
+  text-align: center;
+}
+
+.misc li
+{
+  @extend %no-margin;
+  display: inline;
+  margin-left: 2px;
+  margin-right: 2px;
+}

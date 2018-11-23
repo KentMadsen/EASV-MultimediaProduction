@@ -1,0 +1,45 @@
+footer
+{
+    @extend %foreground;
+    @extend %no-margin;
+
+    border-top: 1px solid $border-color;
+
+    grid-area:footer-area;
+
+}
+
+.footer-container
+{
+
+}
+
+#footer-misc-labels
+{
+    background-color:#292929;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+#footer-misc-labels ol li
+{
+    display: inline;
+}
+
+.container-bottom
+{
+    grid-area: auto;
+
+    border-top: 1px solid $border-color;
+    width: 100%;
+
+    height: 25px;
+}
+
+.footer-area-content
+{
+    height: 350px;
+    background-color: $background-page;
+}

@@ -1,0 +1,33 @@
+*
+{
+    font-family: $font-body-stack;
+}
+
+body
+{
+    @extend %no-margin;
+
+    background-color: $background-color;
+
+    display: grid;
+
+    grid-template-rows: $header-height auto auto;
+
+    grid-template-areas: "header-area"
+                         "page_and_page_navigation"
+                         "footer-area";
+
+    grid-gap: 0px;
+}
+
+.background-overlay
+{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+
+  width: 45%;
+  height: 100%;
+  right: 0px;
+}
+

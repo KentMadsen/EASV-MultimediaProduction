@@ -1,0 +1,58 @@
+//
+@import './_/_base.scss';
+
+//
+@import './header.scss';
+@import './body.scss';
+@import "./navigation.scss";
+@import './footer.scss';
+@import './document.scss';
+@import './cover.scss';
+
+@import "./container";
+
+@import "./misc.scss";
+@import "./navigation.scss";
+
+@import "./effect.scss";
+@import "./cards.scss";
+
+main
+{
+    @extend %no-margin;
+    grid-area: main-grid-area;
+
+    padding-top: $length-to-header;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    z-index: 2;
+}
+
+.document-and-navigation
+{
+    display: grid;
+    grid-area: page_and_page_navigation;
+
+    grid-template-columns : auto $navigation-width;
+
+    grid-template-areas : "body-area page_navigation_area";
+
+    border-bottom: 1px solid $border-color;
+
+    grid-gap : 10px;
+}
+
+.view-container
+{
+    grid-area: body-area;
+    display:grid;
+
+    grid-template-columns : auto;
+    grid-template-rows    : auto;
+
+    grid-template-areas : "main-grid-area";
+
+    grid-gap : 10px;
+}
