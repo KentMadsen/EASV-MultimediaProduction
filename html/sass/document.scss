@@ -21,6 +21,25 @@ h2
     font-family: $font-document-title;
 }
 
+.reference
+{
+    color: $charlie-color;
+    list-style-type: none;
+}
+
+
+.reference:visited
+{
+    color: $charlie-color;
+}
+
+.reference:link
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: $charlie-color;
+}
+
 //
 .document_page_container
 {
